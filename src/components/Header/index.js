@@ -7,6 +7,7 @@ const Header = () => {
         <h1>Local Library</h1>
         <Link to="/">Overall Stats</Link>
         <Link to="/books">Stats By Book</Link>
+        <Link to="/accounts">Stats By Account</Link>
       </nav>
     </header>
   )

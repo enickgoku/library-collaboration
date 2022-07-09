@@ -1,6 +1,9 @@
 const ListItem = ({ data }) => {
   return (
-    <div style={{ border: '1px solid black' }}>{data}</div>
+    <div class="genre-counts" style={{ border: '1px solid black' }}>{data}
+      <span class="count">0</span>
+    </div>  
+   
   )
 }
 
