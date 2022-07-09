@@ -1,8 +1,16 @@
+import { Route, Routes } from 'react-router-dom'
+import Page from './components/Page'
+import Stats from './views/Stats'
+import Books from './views/Books'
+
 function App() {
   return (
-    <div>
-      <h1>hi</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Page />}>
+        <Route index element={<Stats />} />
+        <Route path="/books" element={<Books />} />
+      </Route>
+    </Routes>
   )
 }
 
